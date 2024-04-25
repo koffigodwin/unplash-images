@@ -1,0 +1,129 @@
+
+body{
+  background: #fff;
+  color: #000;
+}
+.dark-theme{
+  background: #000;
+  color: #fff;
+}
+
+
+.toggle-container{
+  display: flex;
+  justify-content: space-between;
+}
+.app-name{
+  font-size: 1.5rem;
+  margin-left: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #000;
+}
+.app-name-color{
+  color: #fff;
+}
+
+@media (prefers-color-scheme:dark){
+  :root{
+    background: #000;
+    color: #fff;
+  }
+}
+
+
+
+.btn-mode{
+  position: relative;
+  float: right;
+  margin-right: 2rem;
+  font-size: 1.5rem;
+  border-color: transparent;
+  background: transparent;
+  color: #fff;
+}
+.color-mode{
+  color: #000;
+}
+.input-container{
+  position: relative;
+  top: 2rem;
+  align-items: center;
+  left: 50%;
+  transform: translate(-50%);
+  text-align: center;
+}
+.form{
+  margin-bottom: 20px;
+}
+input{
+  border: 2px solid black;
+  font-size: 1.3rem;
+  padding: 10px;
+  width: clamp(15rem,50vw , 25rem);
+  border-top-left-radius: 7px; 
+  border-bottom-left-radius: 7px;
+}
+.btn-submit{
+  font-size: 1.3rem;
+  padding: 10px;
+  border: 2px solid rgb(145, 117, 173);
+  background: rgb(145, 117, 173);
+  color: #fff;
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+  cursor: pointer;
+}
+.button-search{
+  margin-top: 20px;
+}
+.btn-search{
+  font-size: 1.3rem;
+  padding: 15px;
+  border: transparent;
+  margin: 10px;
+  background: rgb(145, 117, 173);
+  border-radius: 7px;
+  color: #fff;
+  cursor: pointer;
+  margin-right: 15px;
+  margin-bottom: 20px;
+}
+.image-container{
+  position: relative;
+  margin-top: 20px;
+  position: relative;
+  text-align: center;
+}
+.tiitle{
+  text-transform: capitalize;
+  padding-top: 2rem;
+  letter-spacing: 1px;
+}
+.colors{
+  color: #fff;
+}
+.images{
+  width: 350px;
+  height: 250px;
+  margin: 20px;
+}
+
+@media screen and (max-width:500px) {
+  .input-container{
+    position: relative;
+    top: 2rem;
+  }
+  .tiitle{
+    text-transform: capitalize;
+    padding-top: 3rem;
+    letter-spacing: 1px;
+  }
+  input{
+    width: 200px;
+  }
+  .btn-search{
+    padding: 10px;
+    font-size: 1.2rem;
+  }
+}
